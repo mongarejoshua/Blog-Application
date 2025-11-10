@@ -4,22 +4,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>techwithjosh</title>
-
+    <title>The Creative Blog - Bootstrap 5</title>
+    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="container">
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, consequatur eius. Fugit odio ipsum saepe ut nobis alias, accusamus perferendis modi est? Voluptatibus exercitationem sit reprehenderit voluptas asperiores ducimus illo?z</h1>
+<body class="bg-light">
 
-    <p class="text-uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio deleniti, assumenda eum consectetur, adipisci reprehenderit quidem facere fugit eos repellendus sint. Illo esse eius dolorem, deleniti ab perspiciatis quam.</p>
-    
-    <p class="text-lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio deleniti, assumenda eum consectetur, adipisci reprehenderit quidem facere fugit eos repellendus sint. Illo esse eius dolorem, deleniti ab perspiciatis quam.</p>
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <i class="bi bi-feather me-2"></i>Creative Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i
+                                class="bi bi-house-door-fill me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-tags-fill me-1"></i>Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-pencil-square me-1"></i>Write</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle me-1"></i>Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-light text-primary">Discover the Art of Storytelling</h1>
+            <p class="lead text-muted mb-4">A place for thinkers, creators, and innovators.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3 rounded-pill">
+                    Start Reading <i class="bi bi-arrow-right-short"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 rounded-pill">
+                    Subscribe <i class="bi bi-bell"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="container mb-5">
+        <div class="row">
+
+            <!-- Blog Posts Column (8/12 on large, full width on small/medium) -->
+            <div class="col-lg-8">
+
+                <h2 class="mb-4 text-primary border-bottom pb-2">Latest Articles</h2>
+
+                <!-- Blog Post Card 1: Design Trends -->
+                <div class="card mb-4 shadow-sm border-0">
+                    <img src="https://placehold.co/800x400/007bff/ffffff?text=Design+Trends" class="card-img-top"
+                        alt="Abstract modern design">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2"><i class="bi bi-palette"></i> Design</span>
+                        <h3 class="card-title fw-bold">The Minimalist Movement: Less is Truly More</h3>
+                        <p class="card-text text-muted small">
+                            <i class="bi bi-calendar me-1"></i> November 10, 2025 |
+                            <i class="bi bi-person-fill me-1"></i> by Jane Doe
+                        </p>
+                        <p class="card-text">
+                            Explore how minimalist principles are reshaping modern web design, productivity, and
+                            lifestyle choices. We delve into the philosophy and practical applications of stripping away
+                            the excess to focus on core value...
+                        </p>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Read Full Post</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 2: Tech Innovations -->
+                <div class="card mb-4 shadow-sm border-0">
+                    <img src="https://placehold.co/800x400/28a745/ffffff?text=AI+Revolution" class="card-img-top"
+                        alt="AI brain diagram">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2"><i class="bi bi-gear-fill"></i> Technology</span>
+                        <h3 class="card-title fw-bold">Understanding the Quantum Computing Leap</h3>
+                        <p class="card-text text-muted small">
+                            <i class="bi bi-calendar me-1"></i> November 5, 2025 |
+                            <i class="bi bi-person-fill me-1"></i> by Alex Smith
+                        </p>
+                        <p class="card-text">
+                            Quantum computing is moving from theoretical concept to practical reality. This article
+                            breaks down the complex science into understandable concepts and explores its potential
+                            impact on cryptography and medicine...
+                        </p>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Read Full Post</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 3: Travel -->
+                <div class="card mb-4 shadow-sm border-0">
+                    <img src="https://placehold.co/800x400/ffc107/333333?text=Hidden+Destinations" class="card-img-top"
+                        alt="Secluded beach">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2"><i class="bi bi-compass"></i> Travel</span>
+                        <h3 class="card-title fw-bold">10 Undiscovered European Hiking Trails</h3>
+                        <p class="card-text text-muted small">
+                            <i class="bi bi-calendar me-1"></i> October 28, 2025 |
+                            <i class="bi bi-person-fill me-1"></i> by Maria Gomez
+                        </p>
+                        <p class="card-text">
+                            Skip the crowds and explore the true beauty of Europe's natural landscapes. We reveal ten
+                            stunning, lesser-known hiking trails perfect for an authentic adventure...
+                        </p>
+                        <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Read Full Post</a>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination justify-content-center pt-3">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- Sidebar Column (4/12 on large, stacks below on small/medium) -->
+            <div class="col-lg-4">
+
+                <!-- Search Widget -->
+                <div class="card mb-4 shadow-sm border-0">
+                    <div class="card-header bg-primary text-white fw-bold">
+                        <i class="bi bi-search me-1"></i> Search
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search blog posts..."
+                                aria-label="Search blog posts">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Go</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="card mb-4 shadow-sm border-0">
+                    <div class="card-header bg-secondary text-white fw-bold">
+                        <i class="bi bi-list-nested me-1"></i> Categories
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" class="btn-link text-decoration-none">Technology (12)</a></li>
+                                    <li><a href="#" class="btn-link text-decoration-none">Design (8)</a></li>
+                                    <li><a href="#" class="btn-link text-decoration-none">Lifestyle (25)</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" class="btn-link text-decoration-none">Travel (15)</a></li>
+                                    <li><a href="#" class="btn-link text-decoration-none">Finance (5)</a></li>
+                                    <li><a href="#" class="btn-link text-decoration-none">Food (10)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Widget -->
+                <div class="card bg-info text-white mb-4 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Join Our Newsletter</h5>
+                        <p class="card-text small">Get the latest articles delivered straight to your inbox every week.
+                        </p>
+                        <form>
+                            <div class="input-group mb-2">
+                                <input type="email" class="form-control form-control-sm"
+                                    placeholder="Your email address" aria-label="Email">
+                            </div>
+                            <button type="submit" class="btn btn-light btn-sm w-100 rounded-pill">Sign Up Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Creative Hub</h5>
+                    <p class="small">
+                        Dedicated to providing high-quality content on technology, design, travel, and personal growth.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Explore</h5>
+                    <p><a href="#" class="text-white text-decoration-none small">Our Team</a></p>
+                    <p><a href="#" class="text-white text-decoration-none small">Sitemap</a></p>
+                    <p><a href="#" class="text-white text-decoration-none small">Careers</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Support</h5>
+                    <p><a href="#" class="text-white text-decoration-none small">Help Center</a></p>
+                    <p><a href="#" class="text-white text-decoration-none small">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none small">Terms of Service</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Contact</h5>
+                    <p class="small"><i class="bi bi-house-door me-2"></i> New York, NY 10012, US</p>
+                    <p class="small"><i class="bi bi-envelope me-2"></i> info@creativehub.com</p>
+                    <p class="small"><i class="bi bi-phone me-2"></i> +01 234 567 89</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="my-3">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start small">
+                        &copy; 2025 Creative Hub. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
